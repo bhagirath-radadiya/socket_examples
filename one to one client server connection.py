@@ -4,13 +4,13 @@ import socket
 import threading
 
 HOST = '127.0.0.1'
-PORT_1 = 9000
+PORT = 9000
 
 # create a socket object
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # connect to the server
-client_socket.connect((HOST, PORT_1))
+client_socket.connect((HOST, PORT))
 print("Connected to server!")
 
 
